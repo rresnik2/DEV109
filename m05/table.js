@@ -4,8 +4,7 @@ var msg = '';              // Message
 
 while (i < 11) {
     msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
-    i++;
-  }
+    i++; 
 }
 
 // Write the message into the page
