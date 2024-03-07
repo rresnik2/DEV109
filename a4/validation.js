@@ -17,24 +17,14 @@ function validateForm() {
   var letters = /^[A-za-z]+$/;
   var numbers = /^[0-9]+$/;
   var errorMessages = "";
-  try{
+  
   userEmail = document.getElementById("Email").value;
-  }
-  try{
   firstName = document.getElementById("FirstName").value;
-  }
-  try{
   LastName = document.getElementById("LastName").value;
-  }
-  try{
   phone = document.getElementById("Phone").value;
-  }
-  try{
   password = document.getElementById("Password").value;
-  }
-  try{
   userName = document.getElementById("UserName").value;
-  }
+  
   if (userName.length > 12 ||
     userName === "")
 
