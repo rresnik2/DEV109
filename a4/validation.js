@@ -7,7 +7,7 @@ function validateForm() {
   var validLastName=false;
   var userEmail = "";
   var firstName = "";
-  var LastName = "";
+  var lastName = "";
   var phone = "";
   var password = "";
   var userName = "";
@@ -20,7 +20,7 @@ function validateForm() {
   
   userEmail = document.getElementById("Email").value;
   firstName = document.getElementById("FirstName").value;
-  LastName = document.getElementById("LastName").value;
+  lastName = document.getElementById("LastName").value;
   phone = document.getElementById("Phone").value;
   password = document.getElementById("Password").value;
   userName = document.getElementById("UserName").value;
