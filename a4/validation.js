@@ -1,3 +1,8 @@
+function validate(entry, validated){
+  if ((document.getElementById(entry).value !== "") ) {
+         validated = document.getElementById(entry).value;
+      }
+}
 function validateForm() {
   var validUsername = false;
   var validUserPassword = false;
@@ -18,12 +23,13 @@ function validateForm() {
   var numbers = /^[0-9]+$/;
   var errorMessages = "";
   
-  userEmail = document.getElementById("Email").value;
-  firstName = document.getElementById("FirstName").value;
-  lastName = document.getElementById("LastName").value;
-  phone = document.getElementById("Phone").value;
-  password = document.getElementById("Password").value;
-  userName = document.getElementById("UserName").value;
+  validated("Email", userEmail);
+  validated("FirstName", firstName);
+  validated("LastName", lastName);
+  validated("Phone", phone);
+  validated("Password", password);
+  validated("UserName", userName);
+ 
   
   if (userName.length > 12 ||
     userName === "")
