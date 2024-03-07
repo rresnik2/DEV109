@@ -19,14 +19,22 @@ function validateForm() {
   var errorMessages = "";
   try{
   userEmail = document.getElementById("Email").value;
+  }
+  try{
   firstName = document.getElementById("FirstName").value;
+  }
+  try{
   LastName = document.getElementById("LastName").value;
+  }
+  try{
   phone = document.getElementById("Phone").value;
+  }
+  try{
   password = document.getElementById("Password").value;
+  }
+  try{
   userName = document.getElementById("UserName").value;
   }
-  catch(Exception){
-    errorMessages += "";}
   if (userName.length > 12 ||
     userName === "")
 
