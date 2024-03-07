@@ -1,6 +1,6 @@
 function validated(entry, validated){
-  if ((document.getElementById(entry).value !== "") ) {
-         validated = document.getElementById(entry).value;
+  if ((document.myForm.entry.value !== "") ) {
+         validated = document.myForm.entry.value;
       }
 }
 function validateForm() {
@@ -9,7 +9,7 @@ function validateForm() {
   var validFirstName = false;
   var validPhone = false;
   var validEmail = false;
-  var validLastName=false;
+  var validLastName = false;
   var userEmail = "";
   var firstName = "";
   var lastName = "";
@@ -52,11 +52,18 @@ function validateForm() {
 
   else
     validFirstName = true;
+  
+  if (lastName === "" || lastName.length > 50)
 
+    errorMessages += "<p>The last name must be under 50 chracters and it is required. Only letters and number are accepted.</p>";
+
+  else
+    validLastName = true;
+  
   if (phone === "" ||
     phone.length > 15 ||
     !phone.match(letters))
-    errorMessages += "<p>The phone number mus tbe less than 15 chracters and it is required. Only numbers are accepted.</p>";
+    errorMessages += "<p>The phone number must be less than 15 chracters and it is required. Only numbers are accepted.</p>";
 
   else
     validPhone = true;
