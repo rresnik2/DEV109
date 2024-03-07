@@ -1,4 +1,4 @@
-function validate(entry, validated){
+function validated(entry, validated){
   if ((document.getElementById(entry).value !== "") ) {
          validated = document.getElementById(entry).value;
       }
