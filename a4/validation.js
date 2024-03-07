@@ -17,16 +17,13 @@ function validateForm() {
   var letters = /^[A-za-z]+$/;
   var numbers = /^[0-9]+$/;
   var errorMessages = "";
-  try{
+  
   userEmail = document.getElementById("Email").value;
   firstName = document.getElementById("FirstName").value;
   LastName = document.getElementById("LastName").value;
   phone = document.getElementById("Phone").value;
   password = document.getElementById("Password").value;
   userName = document.getElementById("UserName").value;
-  }
-  catch(Exception)
-    {errorMessages += "";}
 
   if (userName.length > 12 ||
     userName === "")
