@@ -74,7 +74,7 @@ function validateForm() {
     errorMessages += "<p>Invalid email</p>";
   } else {
     validEmail = true;
-  } //Or assign the value to a variable. For example validEmail = true
+  } 
   if (!validEmail || !validUserPassword || !validUsername || !validFirstName || !validPhone ){
     document.getElementById("errorMessages").innerHTML = errorMessages;
     return false;
