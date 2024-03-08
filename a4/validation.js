@@ -18,8 +18,7 @@ function validateForm() {
   var password = "";
   var userName = "";
 
-  var atpos = userEmail.indexOf("@");
-  var dotpos = userEmail.lastIndexOf(".");
+
   var letters = /^[A-za-z]+$/;
   var numbers = /^[0-9]+$/;
   var errorMessages = "";
@@ -30,6 +29,9 @@ function validateForm() {
   validated("Phone", phone);
   validated("Password", password);
   validated("UserName", userName);
+  
+  var atpos = userEmail.indexOf("@");
+  var dotpos = userEmail.lastIndexOf(".");
  
   
   if (userName.length > 12 ||
