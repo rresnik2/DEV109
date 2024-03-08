@@ -1,6 +1,6 @@
 function validated(entry, validated){
   try{
-    if ((document.getElementById(entry).value != null) ) {
+    if ((typeof document.getElementById(entry).value != null) ) {
            validated = document.getElementById(entry.value);
         }}
   catch(Exception){}}
