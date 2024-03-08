@@ -1,8 +1,9 @@
 function validated(entry, validated){
-  if ((document.myForm.entry.value !== "") ) {
-         validated = document.myForm.entry.value;
-      }
-}
+  try{
+    if ((document.getElementById(entry).value != null) ) {
+           validated = document.getElementById(entry.value);
+        }}
+  catch(Exception){}}
 function validateForm() {
   var validUsername = false;
   var validUserPassword = false;
