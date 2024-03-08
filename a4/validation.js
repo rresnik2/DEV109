@@ -18,7 +18,7 @@ function validateForm() {
   var userEmail = document.getElementById("Email").value;
   var firstName = document.getElementById("FirstName").value;
   var lastName = document.getElementById("LastName").value;
-  var pasword = document.getElementById("Password").value;
+  var password = document.getElementById("Password").value;
   var userName = document.getElementById("UserName").value;
 
   var atpos = userEmail.indexOf("@");
