@@ -1,9 +1,4 @@
-function validated(entry, validated){
-  try{
-    if ((typeof document.getElementById(entry).value != null) ) {
-           validated = document.getElementById(entry.value);
-        }}
-  catch(Exception){}}
+
 function validateForm() {
   var validUsername = false;
   var validUserPassword = false;
@@ -11,25 +6,21 @@ function validateForm() {
   var validPhone = false;
   var validEmail = false;
   var validLastName = false;
-  var userEmail = "";
-  var firstName = "";
-  var lastName = "";
-  var phone = "";
-  var password = "";
-  var userName = "";
+
 
 
   var letters = /^[A-za-z]+$/;
   var numbers = /^[0-9]+$/;
   var errorMessages = "";
   
-  validated("Email", userEmail);
-  validated("FirstName", firstName);
-  validated("LastName", lastName);
-  validated("Phone", phone);
-  validated("Password", password);
-  validated("UserName", userName);
   
+  var phone = document.getElementById("Phone").value;
+  var userEmail = document.getElementById("Email").value;
+  var firstName = document.getElementById("FirstName").value;
+  var lastName = document.getElementById("LastName").value;
+  var pasword = document.getElementById("Password").value;
+  var userName = document.getElementById("UserName").value;
+
   var atpos = userEmail.indexOf("@");
   var dotpos = userEmail.lastIndexOf(".");
  
