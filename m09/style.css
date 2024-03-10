@@ -7,5 +7,5 @@ body {
   width: 8px;
   border-radius: 4px;
   position: absolute;
-  color: green;
+  background: green;
 }
