@@ -1,7 +1,6 @@
 var  mybutton = document.querySelector("button");
- 
-  mybutton.addEventListener("click", function(event) {
- 
+mybutton.addEventListener("click", function(event) {
+
 
 var element = document.getElementsByTagName("div");
 for (index = element.length - 1; index >= 0; index--) {
