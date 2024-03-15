@@ -1,8 +1,8 @@
 
 
 * {
-     font-family: Arial, Verdana, sans-serif;
-     color: #665544;
+     font-family: Amatic SC, sans-serif;
+     color: #521942;
      text-align: center;
 }
  body {
@@ -59,11 +59,24 @@
      color: black;
 }
  #header {
-     font-family:'DancingScriptRegular';
+     margin-top: 1em;
 }
-
- #feature {
+#header2 {
+  background-color: pink;
+     color: black;
+}
+#content2 {
+  background-color: pink;
+  overflow: auto;
+  padding: .5em 0;
+}
+#feature {
      background-color: pink;
      color: black;
-     padding: 9em 0;
+     padding: .5em 0;
+}
+#projDscrpt li {
+  overflow: auto;
+  width: 18%;
+  
 }
